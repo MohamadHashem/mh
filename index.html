@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad Hashem</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <script src="javascript/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img  class="logo" src="img/logo.png" alt="">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#intro_sec">Introduction</a></li>
+                <li><a href="#portfolio_sec">Portfolio</a></li>
+                <li><a href="#contact-form">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <!-- add link to my account  -->
+  <!-- social media  -->
+    <div class="social">
+        <a href="https://github.com/MohamadHashem">Github<i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/Mohamad-Hashem1">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/mohamad.hashem.376">Facebook<i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mohamad.hashem.96/">Instagram<i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@mohamad_hashem">Youtube<i class="fa-brands fa-youtube"></i></a>
+       
+        
+
+
+
+    </div>
+
+ 
+    <section class="first_sec">
+        <div class="first"  id="home">
+            <img src="img/profile.jpeg" alt="Mh profile picture" id="profile_pic">
+            <h1 id="first_title">Hello, 
+
+
+                <!-- script to take the name an printet -->
+               <!-- <span><script type="text/javascript" style="color: #263d26 ;" >
+                let person =prompt("welcome to my portfolio website.\n please enter your name.")
+                  person=person.charAt(0).toUpperCase()+person.slice(1).toLowerCase();
+                document.write(person);
+                </script></span>  -->
+    
+                <br>It's Mohamad Hashem<br>Portfolio</h1>
+    
+        </div>
+    </section>
+    <section>
+        <div class="intro">
+
+            <h1 id="intro_sec">Introduction</h1>
+            <h3>Developr</h3><br>
+            <h4>Energetic, Motivated, has great foundation in
+                Programming languages such as flutter, Web
+                development, and desktop application. Seeking
+                a position in mobile development.</h4>
+         
+            <a href="resume/Mohamad Hashem Resume.pdf" id="resume">Resume</a>
+        </div>
+    </section>
+
+<section id="portfolio_sec">
+    <div class="ps">
+        <h1>Here is some of My Project</h1>
+
+
+        <div class="card-container" >
+            <!-- <div class="card">
+                <h3 class="card-heading">Card Heading</h3>
+                <p class="card-body">bodyyy</p>
+            </div> -->
+            
+    
+         
+        </div>
+        <!-- <a href="#" id="loadMore">load more</a> -->
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+</section>
+        
+
+
+
+    <section class="contact">
+        <div class="contact-form">
+
+            <h1 id="contact-form">Get In <span>Touch</span></h1>
+            <p>I am freelancer available always send me an email to support you</p>
+            <form onsubmit="sendEmail(); reset(); return false;"   id="formoid" >
+                <input type="text" name ="username" placeholder="Enter Your Name" id="name" required>
+                <input type="email" name="email" id="email" placeholder="E-mail"  required>
+                <input type="text" placeholder="Subject " id="subject1" name="usersubject" required>
+                <textarea name="usermessage"  placeholder=" Please Enter Your Message " id="message1" required></textarea>
+                <button type="submit" name="submitButton" value="Submit" class="btn"  id="submitButton">Submit</button>
+
+
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "mohamadhashem.rimex@gmail.com",
+                        Password : "mohamad.rimex1310",
+                        To : 'mohamadh.mh23@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : document.getElementById("subject1").value,
+                        Body : document.getElementById("message1").value,
+                                        
+
+
+                    }).then(
+                    message => alert(" your message  was sent ")
+                    );
+
+            }
+        </script>
+
+        <div class="contact-img">
+            <img src="img/contact-img.jpg" alt="">
+        </div>
+    
+
+
+    </section>
+
+
+</body>
+
+
+<footer>
+    <span>Copyright © 2023, All Right Mohamad Hashem</span>
+</footer>
+
+
+</html>
